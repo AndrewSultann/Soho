@@ -1,0 +1,962 @@
+<?php
+    $sub = "";
+    if(isset($_GET["s"])){
+        $sub = ucwords(htmlspecialchars($_GET["s"]));
+    }
+
+    $service = "Protect What Matters Most, Call Us Now!";
+    if(isset($_GET["svc"])){
+        $service = ucwords(htmlspecialchars($_GET["svc"]));
+    }
+
+    date_default_timezone_set('Australia/Brisbane');
+    $today = date('l'); 
+?>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>One Solution. Endless Possibilities.</title>
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+    <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0043/6617/2263/files/Sohofavicon_32x32.png?v=1558072226" type="image/png">
+
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:400,400i,700&display=swap" rel="stylesheet">
+    <link href="css/fontello.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" type="text/css" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.1.0/moment.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div id="floating-number">
+        <a href="tel:1300849293" class="flushy" id="phoneNumber1"> 
+            <span class="holder">
+                <p>Not Sure Where To Start? Call Us Now!</p>
+                <h3 class="text-center"><i class="icon-phone-2" aria-hidden="true"></i> 1300 849 293</h3>
+            </span> 
+        </a>
+    </div>
+    
+    <div id="header" class="section">
+        <div id="headerBar">
+            <div class="container">
+                <div class="row row-eq-height">
+                    <div class="col-md-5">
+                        <img src="img/logo.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-7 cta-ul-holder">
+                        <ul class="cta-ul">
+                            <li>
+                                <a href="#quote" class="cta-ul-item">
+                                    <i class="icon-shapes" aria-hidden="true"></i>
+                                    <span>Get A Free<br>Quote</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:1300849293" class="cta-ul-item">
+                                    <i class="icon-technology-1" aria-hidden="true"></i>
+                                    <span>Call Us On<br>1300 849 293</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <div id="navBar">
+            <div class="container">
+                <div class="row row-eq-height">
+                    <div class="col-md-9 hidden-xs">
+                        <ul class="nav-ul">
+                            <li><a href="#header">Home</a></li>
+                            <li><a href="#aboutOurSystem">About Our System</a></li>
+                            <li><a href="#our-products">Our Products</a></li>
+                            <li><a href="#whyChooseUs">Why Us</a></li>
+                            <li><a href="#testimonials">Testimonials</a></li>
+                            <li><a href="#quote">Get Your Free Quote!</a></li>
+                        </ul>
+                    </div>
+<!--
+                    <div class="col-md-3 todayOffer col-xs-9">
+                        <span class="offerCta">We're Open Now!</span>
+                        <span class="clock-display">Loading...</span>
+                    </div>
+-->
+                    <div class="col-xs-3 visible-xs">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="trx_addons_icon-menu"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="navContainer visible-xs">
+                <ul class="mobile-nav-ul navbar-collapse collapse" id="mainNav">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#aboutOurSystem">About Our System</a></li>
+                    <li><a href="#our-products">Our Products</a></li>
+                    <li><a href="#whyChooseUs">Why Us</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#quote">Get Your Free Quote!</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="headerContent">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row row-eq-height">
+                    <div class="col-md-7 center-content-inCol">
+                        <div class="header-cotnent">
+                            <h1>The Simpler way to a Smarter, Safer Home or Business.<span class="hidden-xs">One Solution. Endless Possibilities.</span></h1>
+                            <p>Powerful, Intelligent, Security &amp; Automation options for home &amp; business. Created to do more than any traditional system. The simpler way to peace of mind. <br><span class="hidden-xs"><br>At Soho Smart we are committed to delivering state-of-the-art security packages that do much more than simply protect your home or business. </span><b>Soho allows you to design a complete security platform to cater to your unique needs.</b><span class="hidden-xs"> Make your selection from tailored kits, add additional sensors, cameras and automation devices if required and select your monitoring subscription plan based on how you want to use your system.</span></p>
+                            <a href="tel:1300849293" class="btn hidden-xs">Call Us 1300 849 293</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-md-offset-1">
+                        <div class="pop-body">
+                            <h4 class="title small">FREE QUOTE <span>Get a response in minutes</span> <span>We look forward to assisting!</span></h4>
+                            <form action="#" method="POST" class="form-widget" novalidate="novalidate" id="contact_form">
+                                <div class="field-wrp">
+                                    <div class="form-group">
+                                        <label class="form-label" for="name">Your Name <span>*</span></label>
+                                        <input class="form-control" data-label="Name" required="" data-msg="Please enter your name." type="text" name="name" id="name" placeholder="Enter your name" aria-required="true">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="email">Your Email <span>*</span></label>
+                                        <input class="form-control" data-label="Email" required="" data-msg="Please enter your email." type="email" name="email" id="email" placeholder="Enter your email" aria-required="true">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="phone">Your Phone Number <span>*</span></label>
+                                        <input class="form-control" data-label="Phone" required="" data-msg="Please enter your phone number." type="text" name="phone" id="phone" placeholder="Enter your phone number" aria-required="true">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="message">Additional Details <span class="muted">(Optional)</span></label>
+                                        <textarea class="form-control" data-label="Message" name="message" id="message" placeholder="Ener Any Additional Details" cols="30" rows="10"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-sm btn-submit">Get My Free Quote</button>
+                                    <span class="cta-sub">*Your details are kept confidential</span>
+                                </div>
+                            </form>
+                            <div class="msg-block"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="aboutOurSystem" class="section">
+        <div class="container">
+            <div class="row row-eq-height mb-25 hidden-xs">
+                <div class="col-lg-6 col-md-6 center-content-inCol">
+                    <img src="img/soho-app.jpg" class="img-responsive">
+                </div>
+                <div class="col-lg-5 col-lg-offset-1 col-md-6 center-content-inCol">
+                    <h3>Powerful Technology. <span>Affordable Monitoring.</span></h3>
+                    <p><b class="highlight">24x7 Access</b> - Arm/Disarm & check system activity directly within the app</p>
+                    <p><b class="highlight">Smart Alerts</b> - Receive instant text, push and email notifications*</p>
+                </div>
+            </div>
+            <div class="row row-eq-height">
+                <div class="col-lg-5  col-md-6 center-content-inCol">
+                    <h3>Never Miss A Moment With Soho Smart</h3>
+                    <p><b class="highlight">24x7 Live video</b> - Keep an eye on your home or business from anywhere</p>
+                    <p><b class="highlight">HD Streaming</b> - HD quality video streamed directly to your smart device</p>
+                    <p><b class="highlight">Two-Way Talk</b> - Call in to family, or pets at home while you're on the go</p>
+                    <p><b class="highlight">Local Constant Recording</b> - 7 days of constant recordings, within the app*</p>
+                    <p><b class="highlight">Secure Event Recording</b> - Up to 500 Alarm events stored in the cloud</p>
+                </div>
+                <div class="col-lg-6 col-lg-offset-1 col-md-6 center-content-inCol hidden-xs">
+                    <img src="img/camera-horizontal.jpg" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="our-products" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="section-headline">
+                        <h2>Our Products</h2>
+                        <p>Our products and top quality service creates a difference between us from our competitors. <b>Our products are designed with the latest technology</b> which consumes lesser bandwidth from the other ordinary systems.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h5 class="subtitle">Smart Touch Security &amp; Automation Kits</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="service-block"> 
+                        <h5>Smart Touch Security &amp; Automation <u>Starter Kit</u></h5>
+                        <img src="img/products/starter-kit.jpg" class="img-responsive">
+                        <a href="#" class="btn btn-sm"  data-toggle="modal" data-target="#starter_kit">More Details</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="service-block">
+                        <h5>Smart Touch Security &amp; Automation <u>Plus Kit</u></h5>
+                        <img src="img/products/plus-kit.jpg" class="img-responsive">
+                        <a href="#" class="btn btn-sm" data-toggle="modal" data-target="#plus_kit">More Details</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="service-block">
+                        <h5>Smart Touch Security &amp; Automation <u>Super Kit</u></h5>
+                        <img src="img/products/super-kit.jpg" class="img-responsive">
+                        <a href="#" class="btn btn-sm" data-toggle="modal" data-target="#super_kit">More Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h5 class="subtitle">Cameras &amp; Doorbell</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="service-block">
+                        <h5>Smart Doorbell Wireless Camera</h5>
+                        <img src="img/products/doorbell-camera.jpg" class="img-responsive">
+                        <a href="#" class="btn btn-sm" data-toggle="modal" data-target="#doorbell_camera">More Details</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="service-block">
+                        <h5>Smart Indoor Wireless Camera</h5>
+                        <img src="img/products/indoor-camera.png" class="img-responsive">
+                        <a href="#" class="btn btn-sm" data-toggle="modal" data-target="#smart_indoor_camera">More Details</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="service-block">
+                        <h5>Smart Outdoor Wireless Camera</h5>
+                        <img src="img/products/outdoor-camera.png" class="img-responsive">
+                        <a href="#" class="btn btn-sm" data-toggle="modal" data-target="#smart_outdoor_camera">More Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="whyChooseUs" class="section">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-7 col-md-8">
+                    <h2>Why Choose Soho Smart</h2>
+                    <p class="hidden-xs">All Soho Smart Packages come equipped with the latest in home automation software. Monitor and control security, lights, door locks, appliances and cameras remotely from our easy to use mobile app. We're doing away with technicians and investing more into technology to provide our customers a simpler, safer, more satisfying security solution. </p>
+                    <ul class="intro-list">
+                        <li>Most cost-effective security &amp; automation products available.</li>
+                        <li>Tailor made to create the best solution for you.</li>
+                        <li>Cross device app control for your entire platform.</li>
+                        <li><b>100% Satisfaction Guarantee.</b> If You Don't Love It, Return It.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="monitoring-plans">
+        <div class="container">
+            <div class="row row-eq-height">
+                <div class="col-md-5 center-content-inCol">
+                    <h2>No Lock-In Monitoring Plans - Simple & Affordable</h2>
+                    <p>Save big on monitoring with Soho Smart. Customers have saved over 25% when compared to other major providers!</p>
+                    <p>Soho Smart monitoring subscriptions can be scaled depending on your usage. Don't pay for services that you don't use!   Check our pay as you go plans below</p>
+                </div>
+                <div class="col-md-7">
+                    <img src="img/plans.jpg" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cta-full section">
+        <div class="container">
+            <div class="row row-eq-height">
+                <div class="col-md-6 center-content-inCol">
+                    <h1><a href="tel:1300849293"><i class="icon-phone-2"></i> 1300 849 293</a></h1>
+                </div>
+                <div class="col-md-6 center-content-inCol">
+                    <p>Whether you are trying to <b>secure your home</b> from an intruder or automate your house to control your lights, locks, thermostats, and security system from your phone with a mobile app <b>we have you covered</b>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="testimonials" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-headline">
+                        <h2>What Our Clients Are Saying</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-eq-height">
+                <div class="col-md-4">
+                    <div class="review-block">
+                        <img src="img/google-5-star.png" class="img-responsive rating">
+                        <p>We use Soho Smart at our work place for installation, repairs and monitoring. Very professional and affordable service. All the techs are very knowledgeable and very helpful. Highly recommend.</p>
+                        <img src="img/google-reviews-icon.jpg" class="img-responsive">
+                        <h5 class="author">Duane Butler<span>2 Weeks Ago</span></h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="review-block">
+                        <img src="img/google-5-star.png" class="img-responsive rating">
+                        <p>Great experience dealing with the team from Soho Smart. From our first contact right through to installing their great camera was just absolute professionalism. I just had their team back to install addition cameras and again a great hassle free experience.</p>
+                        <img src="img/google-reviews-icon.jpg" class="img-responsive">
+                        <h5 class="author">Ros Shaw<span>2 Months Ago</span></h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="review-block">
+                        <img src="img/google-5-star.png" class="img-responsive rating">
+                        <p>Soho Smart have again done a fantastic job with some additional installations over the past few weeks. Nothing is ever too much trouble for them and their staff are always efficient and courteous. A highly recommended company.</p>
+                        <img src="img/google-reviews-icon.jpg" class="img-responsive">
+                        <h5 class="author">Les Emery<span>5 Weeks Ago</span></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="quote" class="up-level">
+        <div class="container">
+            <div class="row row-eq-height">
+                <div class="col-xs-12 visible-xs">
+                    <h2>Protect What Matters Most</h2>
+                    <p class="intro">Tailor a solution that is built to do <b>more than create peace of mind</b>. Dedicated to making you feel safer, your home or business smarter, <b>and your life a whole lot easier.</b></p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-1 col-md-5 center-content-inCol">
+                    <div class="request-quote-form">
+                        <h5>Request a FREE Quote</h5>
+                        <div class="form-container">
+                            <form action="#" method="POST" class="form-widget" novalidate="novalidate" id="contact_form_1">
+                                <div class="field-wrp">
+                                    <div class="form-group">
+                                        <label class="form-label" for="name1">Your Name <span>*</span></label>
+                                        <input class="form-control" data-label="Name" required="" data-msg="Please enter your name." type="text" name="name" id="name1" placeholder="Enter your name" aria-required="true">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="email1">Your Email <span>*</span></label>
+                                        <input class="form-control" data-label="Email" required="" data-msg="Please enter your email address." type="email" name="email" id="email1" placeholder="Enter your email" aria-required="true">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="phone1">Your Phone Number <span>*</span></label>
+                                        <input class="form-control" data-label="Phone" required="" data-msg="Please enter your phone number." type="tel" name="phone" id="phone1" placeholder="Enter your phone number" aria-required="true">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="Interest">Interested In</label>
+                                        <select id="Interest" class="form-control" name="contact[Interest]">
+                                            <option label="Select" value="Select">Select an option</option>
+                                            <option label="Home Security Alarm & Automation" value="Home Security Alarm & Automation">Home Security Alarm &amp; Automation</option>
+                                            <option label="Business Security Alarm & Automation" value="Business Security Alarm & Automation">Business Security Alarm &amp; Automation</option>
+                                            <option label="Smart Cameras" value="Smart Cameras">Smart Cameras</option>
+                                            <option label="Smart Doorbell" value="Smart Doorbell">Smart Doorbell</option>
+                                            <option label="Not Sure" value="Not Sure">Not Sure</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="message1">Additional Details <span class="muted">(Optional)</span></label>
+                                        <textarea class="form-control" data-label="Message" name="message" id="message1" placeholder="Enter Any Additional Details" cols="30" rows="10"></textarea>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-sm btn-submit">Get My Free Quote</button>
+                                </div>
+                            </form>
+                            <p class="form-privacy">*Your details are kept confidential</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-7 center-content-inCol hidden-xs">
+                    <h2>Protect What Matters Most</h2>
+                    <p class="intro">Tailor a solution that is built to do <b>more than create peace of mind</b>. Dedicated to making you feel safer, your home or business smarter, <b>and your life a whole lot easier.</b></p>
+                    <div class="value-prop">
+                        <img src="img/expert-team.png" class="img-responsive">
+                        <div class="prop-content">
+                            <h6>Cost-Effective Security &amp; Automation Products</h6>
+                            <p>Providing the latest in wireless security and automation platforms. State of the art technology means lower installation times, and less service call outs!</p>
+                        </div>
+                    </div>
+                    <div class="value-prop">
+                        <img src="img/doc.png" class="img-responsive">
+                        <div class="prop-content">
+                            <h6>Create The Best Solution For You</h6>
+                            <p>With a range of solutions and monitoring subscriptions to match, you are guaranteed to find the perfect solution for your needs. No Contract, Pay as you go options available.</p>
+                        </div>
+                    </div>
+                    <div class="value-prop">
+                        <img src="img/protect-home.png" class="img-responsive">
+                        <div class="prop-content">
+                            <h6>App Control For Your Entire Platform</h6>
+                            <p>All Soho products are equipped with App control. From arming your system to answering your front door. You can do it all from your smart device!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="up-level">
+        <div class="footer-wrapper">
+            <div class="container">
+                <div class="row row-eq-height">
+                    <div class="col-md-3">
+                        <img src="img/logo.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-9 center-content-inCol">
+                        <h1>
+                            <a href="tel:1300849293"><i class="icon-phone-2"></i> 1300 849 293</a>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="copyright" class="up-level">
+        <div class="copyright-wrapper">
+            <div class="container">
+                <div class="row">
+                    <p>&copy;<?php echo date('Y'); ?> All Rights Reserved - Soho Smart</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="starter_kit" tabindex="0" role="starter_kit" aria-labelledby="starter_kit">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5>Smart Touch Security &amp; Automation <u>Starter Kit</u></h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="text-center prev-image-holder">
+                                <img src="img/products-full/starter-kit/starter-kit.gif" class="img-responsive">
+
+                                <div class="images-thumbnail">
+                                    <ul>
+                                        <li><a href="./img/products-full/2GIGDoorWindow_600x600.png" data-fancybox="gallery"><img src="./img/products-full/thumbnails/2GIGDoorWindow_100x100.png" class="img-fluid " alt=""></a></li>
+                                        <li><a href="./img/products-full/2GIGKeyfob_600x600.png" data-fancybox="gallery"><img src="./img/products-full/thumbnails/2GIGKeyfob_100x100.png" class="img-fluid " alt=""></a></li>
+                                        <li><a href="./img/products-full/2GIGPIR_600x600.png" data-fancybox="gallery"><img src="./img/products-full/thumbnails/2GIGPIR_100x100.png" class="img-fluid" alt=""></a></li>
+                                        <li><a href="./img/products-full/2GIGpanelsoho_600x600.png" data-fancybox="gallery"><img src="./img/products-full/thumbnails/2GIGpanelsoho_100x100.png" class="img-fluid " alt=""></a></li>
+                                        <li><a href="./img/products-full/DimensionsCMs_600x600.png" data-fancybox="gallery"><img src="./img/products-full/thumbnails/DimensionsCMs_100x100.png" class="img-fluid " alt=""></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h4>Smart security has never been more affordable</h4>
+                            <p>Not too little. Not too much. Perfect protection for your home or business.</p>
+                            <h5>Included:</h5>
+                            <ul class="intro-list">
+                                <li><b>Soho Smart Control hub</b> with in-built 3G interactive module. Always on- Always Alert</li>
+                                <li><b>3 x Door/Window Sensors</b> to protect, control and monitor up to 3 entry points</li>
+                                <li><b>1 x PIR Motion Detector</b> to detect movement in any single room/hall way</li>
+                                <li><b>1 x 4-button keychain remote</b> to easily arm stay, arm away and disarm your alarm. </li>
+                                <li><b>1 x Smart Indoor Camera*</b> to keep an eye on things remotely via the Soho Smart App.</li>
+                                <li><b>Professional Installation</b>
+                            </ul>
+
+                            <p class="hint">*Free Camera available whilst stocks last. Live view included with Soho protect base level monitoring package. For Storage, Soho View add-on required. </p>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="contact_block">
+                                <div class="request-quote-form">
+                                    <h5>Request a FREE Quote</h5>
+                                    <div class="form-container">
+                                        <form action="#" method="POST" class="form-widget" novalidate="novalidate" id="contact_form_1">
+                                            <div class="field-wrp">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="product">Product <span>*</span></label>
+                                                    <input class="form-control" data-label="product" readonly type="text" name="product" id="product" aria-required="true" value="Smart Touch Starter Kit">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="form-label" for="name1">Your Name <span>*</span></label>
+                                                    <input class="form-control" data-label="Name" required="" data-msg="Please enter your name." type="text" name="name" id="name1" placeholder="Enter your name" aria-required="true">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="form-label" for="email1">Your Email <span>*</span></label>
+                                                    <input class="form-control" data-label="Email" required="" data-msg="Please enter your email address." type="email" name="email" id="email1" placeholder="Enter your email" aria-required="true">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="form-label" for="phone1">Your Phone Number <span>*</span></label>
+                                                    <input class="form-control" data-label="Phone" required="" data-msg="Please enter your phone number." type="tel" name="phone" id="phone1" placeholder="Enter your phone number" aria-required="true">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="form-label" for="message1">Additional Details <span class="muted">(Optional)</span></label>
+                                                    <textarea class="form-control" data-label="Message" name="message" id="message1" placeholder="Enter Any Additional Details" cols="30" rows="10"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="text-center">
+                                                <button type="submit" class="btn btn-sm btn-submit">Get My Free Quote</button>
+                                            </div>
+                                        </form>
+                                        <p class="form-privacy">*Your details are kept confidential</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="popup-phone">
+                                <p>Or <b>Get In Touch Directly With Us On</b></p>
+                                <h2><a href="tel:0296025400"><i class="icon-phone-2" aria-hidden="true"></i>02 9602 5400</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="plus_kit" tabindex="0" role="plus_kit" aria-labelledby="plus_kit">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5>Smart Touch Security &amp; Automation <u>Plus Kit</u></h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="text-center prev-image-holder">
+                                <img src="./img/products-full/plus-kit/10piecetest_600x600.gif" class="img-responsive">
+
+                                <div class="images-thumbnail">
+                                    <ul>
+                                        <li><a href="./img/products-full/2GIGDoorWindow_600x600.png" data-fancybox="gallery2"><img src="./img/products-full/thumbnails/2GIGDoorWindow_100x100.png" class="img-fluid " alt=""></a></li>
+                                        <li><a href="./img/products-full/2GIGKeyfob_600x600.png" data-fancybox="gallery2"><img src="./img/products-full/thumbnails/2GIGKeyfob_100x100.png" class="img-fluid " alt=""></a></li>
+                                        <li><a href="./img/products-full/2GIGPIR_600x600.png" data-fancybox="gallery2"><img src="./img/products-full/thumbnails/2GIGPIR_100x100.png" class="img-fluid" alt=""></a></li>
+                                        <li><a href="./img/products-full/2GIGpanelsoho_600x600.png" data-fancybox="gallery2"><img src="./img/products-full/thumbnails/2GIGpanelsoho_100x100.png" class="img-fluid " alt=""></a></li>
+                                        <li><a href="./img/products-full/DimensionsCMs_600x600.png" data-fancybox="gallery2"><img src="./img/products-full/thumbnails/DimensionsCMs_100x100.png" class="img-fluid " alt=""></a></li>
+                                        <li><a href="./img/products-full/FreeIndoor_c509d5b5-fb69-4b89-aa1e-29bf925db09c_600x600.png" data-fancybox="gallery2"><img src="./img/products-full/thumbnails/FreeIndoor_c509d5b5-fb69-4b89-aa1e-29bf925db09c_100x100.png" class="img-fluid " alt=""></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h4>More area to protect?</h4>
+                            <p>Home and business security package tailored to suit the Australian residential and/or commercial property. Protect all access points and areas for complete peace of mind. </p>
+                            <h5>Included:</h5>
+                            <ul class="intro-list">
+                                <li><b>Soho Smart Control hub </b> with in-built 3G interactive module. Always on- Always Alert</li>
+                                <li><b>6 x Door/Window Sensors</b>  to protect, control and monitor up to 6 entry points</li>
+                                <li><b>2 x PIR Motion Detector</b> to detect movement in any two areas </li>
+                                <li><b>1 x 4-button keychain remote</b> to easily arm stay, arm away and disarm your alarm.  </li>
+                                <li><b>1 x Smart Indoor Camera*</b> to keep an eye on things remotely via the Soho Smart App.</li>
+                                <li><b>Professional Installation</b>
+                            </ul>
+
+                            <p class="hint">*Free Camera available whilst stocks last. Live view included with Soho protect base level monitoring package. For Storage, Soho View add-on required. </p>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="contact_block">
+                                <div class="request-quote-form">
+                                    <h5>Request a FREE Quote</h5>
+                                    <div class="form-container">
+                                        <form action="#" method="POST" class="form-widget" novalidate="novalidate" id="contact_form_1">
+                                            <div class="field-wrp">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="product">Product <span>*</span></label>
+                                                    <input class="form-control" data-label="product" readonly type="text" name="product" id="product" aria-required="true" value="Smart Touch Plus Kit">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="form-label" for="name1">Your Name <span>*</span></label>
+                                                    <input class="form-control" data-label="Name" required="" data-msg="Please enter your name." type="text" name="name" id="name1" placeholder="Enter your name" aria-required="true">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="form-label" for="email1">Your Email <span>*</span></label>
+                                                    <input class="form-control" data-label="Email" required="" data-msg="Please enter your email address." type="email" name="email" id="email1" placeholder="Enter your email" aria-required="true">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="form-label" for="phone1">Your Phone Number <span>*</span></label>
+                                                    <input class="form-control" data-label="Phone" required="" data-msg="Please enter your phone number." type="tel" name="phone" id="phone1" placeholder="Enter your phone number" aria-required="true">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="form-label" for="message1">Additional Details <span class="muted">(Optional)</span></label>
+                                                    <textarea class="form-control" data-label="Message" name="message" id="message1" placeholder="Enter Any Additional Details" cols="30" rows="10"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="text-center">
+                                                <button type="submit" class="btn btn-sm btn-submit">Get My Free Quote</button>
+                                            </div>
+                                        </form>
+                                        <p class="form-privacy">*Your details are kept confidential</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="popup-phone">
+                                <p>Or <b>Get In Touch Directly With Us On</b></p>
+                                <h2><a href="tel:0296025400"><i class="icon-phone-2" aria-hidden="true"></i>02 9602 5400</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="super_kit" tabindex="0" role="super_kit" aria-labelledby="super_kit">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5>Smart Touch Security &amp; Automation <u>Super Kit</u></h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="text-center prev-image-holder">
+                                <img src="img/products-full/super-kit/14piecetest_600x383.gif"class="img-responsive">
+
+                                <div class="images-thumbnail">
+                                    <ul>
+                                        <li><a href="./img/products-full/2GIGDoorWindow_600x600.png" data-fancybox="gallery3"><img src="./img/products-full/thumbnails/2GIGDoorWindow_100x100.png" class="img-fluid " alt=""></a></li>
+                                        <li><a href="./img/products-full/2GIGKeyfob_600x600.png" data-fancybox="gallery3"><img src="./img/products-full/thumbnails/2GIGKeyfob_100x100.png" class="img-fluid " alt=""></a></li>
+                                        <li><a href="./img/products-full/2GIGPIR_600x600.png" data-fancybox="gallery3"><img src="./img/products-full/thumbnails/2GIGPIR_100x100.png" class="img-fluid" alt=""></a></li>
+                                        <li><a href="./img/products-full/2GIGpanelsoho_600x600.png" data-fancybox="gallery3"><img src="./img/products-full/thumbnails/2GIGpanelsoho_100x100.png" class="img-fluid " alt=""></a></li>
+                                        <li><a href="./img/products-full/DimensionsCMs_600x600.png" data-fancybox="gallery3"><img src="./img/products-full/thumbnails/DimensionsCMs_100x100.png" class="img-fluid " alt=""></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h4>Elite level protection. Entry level cost.
+                            </h4>
+                            <p>The complete suite of protection products. Unrivalled protection and control. Suited to larger residential and commercial sites.  </p>
+                            <h5>Included:</h5>
+                            <ul class="intro-list">
+                                <li><b>Control hub  </b> with in-built 3G interactive module. Always on- Always Alert</li>
+                                <li><b>8 x Door/Window Sensors</b>  to protect, control and monitor up to 8 entry points/li>
+                                <li><b>3 x PIR Motion Detector</b> to detect movement in any two areas </li>
+                                <li><b>2 x 4-button keychain remote</b> to easily arm stay, arm away and disarm your alarm.  </li>
+                                <li><b>1 x Smart Indoor Camera*</b> to keep an eye on things remotely via the Soho Smart App.</li>
+                                <li><b>Professional Installation</b>
+                            </ul>
+
+                            <p class="hint">*Free Camera available whilst stocks last. Live view included with Soho protect base level monitoring package. For Storage, Soho View add-on required. </p>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="contact_block">
+                                <div class="request-quote-form">
+                                    <h5>Request a FREE Quote</h5>
+                                    <div class="form-container">
+                                        <form action="#" method="POST" class="form-widget" novalidate="novalidate" id="contact_form_1">
+                                            <div class="field-wrp">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="product">Product <span>*</span></label>
+                                                    <input class="form-control" data-label="product" readonly type="text" name="product" id="product" aria-required="true" value="Smart Touch Super Kit">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="form-label" for="name1">Your Name <span>*</span></label>
+                                                    <input class="form-control" data-label="Name" required="" data-msg="Please enter your name." type="text" name="name" id="name1" placeholder="Enter your name" aria-required="true">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="form-label" for="email1">Your Email <span>*</span></label>
+                                                    <input class="form-control" data-label="Email" required="" data-msg="Please enter your email address." type="email" name="email" id="email1" placeholder="Enter your email" aria-required="true">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="form-label" for="phone1">Your Phone Number <span>*</span></label>
+                                                    <input class="form-control" data-label="Phone" required="" data-msg="Please enter your phone number." type="tel" name="phone" id="phone1" placeholder="Enter your phone number" aria-required="true">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="form-label" for="message1">Additional Details <span class="muted">(Optional)</span></label>
+                                                    <textarea class="form-control" data-label="Message" name="message" id="message1" placeholder="Enter Any Additional Details" cols="30" rows="10"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="text-center">
+                                                <button type="submit" class="btn btn-sm btn-submit">Get My Free Quote</button>
+                                            </div>
+                                        </form>
+                                        <p class="form-privacy">*Your details are kept confidential</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="popup-phone">
+                                <p>Or <b>Get In Touch Directly With Us On</b></p>
+                                <h2><a href="tel:0296025400"><i class="icon-phone-2" aria-hidden="true"></i>02 9602 5400</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="doorbell_camera" tabindex="0" role="doorbell_camera" aria-labelledby="doorbell_camera">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5>Doorbell Camera</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="text-center prev-image-holder">
+                                <img style="padding: 24px;" src="img/products-full/doorbell-camera-www-sohosmart-com-au-soho-smart-communication-device-gadget_848_608x608.png"class="img-responsive">
+                            </div>
+                            <h4>Product's Description</h4>
+                            <p>The smarter, more convenient way to answer your front door. Any activity at your front door rings your mobile device, so you'll never miss a moment. Equipped with two-way voice, HD video & motion activated video recordings, you'll be able to answer the door-bell even when you're not home!</p>
+                            <ul class="intro-list">
+                                <li><b>Doorbell camera utilises pre-existing wi-fi for operation.</b></li>
+                                <li><b> Smart View subscription required for video storage and mobile notification.</b></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="contact_block">
+                                <div class="request-quote-form">
+                                    <h5>Request a FREE Quote</h5>
+                                    <div class="form-container">
+                                        <form action="#" method="POST" class="form-widget" novalidate="novalidate" id="contact_form_1">
+                                            <div class="field-wrp">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="product">Product <span>*</span></label>
+                                                    <input class="form-control" data-label="product" readonly type="text" name="product" id="product" aria-required="true" value="Doorbell Camera">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="form-label" for="name1">Your Name <span>*</span></label>
+                                                    <input class="form-control" data-label="Name" required="" data-msg="Please enter your name." type="text" name="name" id="name1" placeholder="Enter your name" aria-required="true">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="form-label" for="email1">Your Email <span>*</span></label>
+                                                    <input class="form-control" data-label="Email" required="" data-msg="Please enter your email address." type="email" name="email" id="email1" placeholder="Enter your email" aria-required="true">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="form-label" for="phone1">Your Phone Number <span>*</span></label>
+                                                    <input class="form-control" data-label="Phone" required="" data-msg="Please enter your phone number." type="tel" name="phone" id="phone1" placeholder="Enter your phone number" aria-required="true">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="form-label" for="message1">Additional Details <span class="muted">(Optional)</span></label>
+                                                    <textarea class="form-control" data-label="Message" name="message" id="message1" placeholder="Enter Any Additional Details" cols="30" rows="10"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="text-center">
+                                                <button type="submit" class="btn btn-sm btn-submit">Get My Free Quote</button>
+                                            </div>
+                                        </form>
+                                        <p class="form-privacy">*Your details are kept confidential</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="popup-phone">
+                                <p>Or <b>Get In Touch Directly With Us On</b></p>
+                                <h2><a href="tel:0296025400"><i class="icon-phone-2" aria-hidden="true"></i>02 9602 5400</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="smart_indoor_camera" tabindex="0" role="smart_indoor_camera" aria-labelledby="smart_indoor_camera">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5>Smart Indoor Wireless Camera</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="text-center prev-image-holder">
+                                <img src="img/products-full/IndoorCamera_608x608.png" class="img-responsive">
+                            </div>
+                            <h4>Product's Description</h4>
+                            <p>Keep an eye on things at home. With full HD streaming, 2-way voice, local constant recording and secure event recording to a cloud based storage solution these alarm verification cameras are perfectly suited to monitor your premises.</p>
+                            <ul class="intro-list">
+                                <li><b>Indoor camera utilises pre-existing wifi for operation.</b></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="contact_block">
+                                <div class="request-quote-form">
+                                    <h5>Request a FREE Quote</h5>
+                                    <div class="form-container">
+                                        <form action="#" method="POST" class="form-widget" novalidate="novalidate" id="contact_form_1">
+                                            <div class="field-wrp">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="product">Product <span>*</span></label>
+                                                    <input class="form-control" data-label="product" readonly type="text" name="product" id="product" aria-required="true" value="Smart Indoor Wireless Camera">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="form-label" for="name1">Your Name <span>*</span></label>
+                                                    <input class="form-control" data-label="Name" required="" data-msg="Please enter your name." type="text" name="name" id="name1" placeholder="Enter your name" aria-required="true">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="form-label" for="email1">Your Email <span>*</span></label>
+                                                    <input class="form-control" data-label="Email" required="" data-msg="Please enter your email address." type="email" name="email" id="email1" placeholder="Enter your email" aria-required="true">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="form-label" for="phone1">Your Phone Number <span>*</span></label>
+                                                    <input class="form-control" data-label="Phone" required="" data-msg="Please enter your phone number." type="tel" name="phone" id="phone1" placeholder="Enter your phone number" aria-required="true">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="form-label" for="message1">Additional Details <span class="muted">(Optional)</span></label>
+                                                    <textarea class="form-control" data-label="Message" name="message" id="message1" placeholder="Enter Any Additional Details" cols="30" rows="10"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="text-center">
+                                                <button type="submit" class="btn btn-sm btn-submit">Get My Free Quote</button>
+                                            </div>
+                                        </form>
+                                        <p class="form-privacy">*Your details are kept confidential</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="popup-phone">
+                                <p>Or <b>Get In Touch Directly With Us On</b></p>
+                                <h2><a href="tel:0296025400"><i class="icon-phone-2" aria-hidden="true"></i>02 9602 5400</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="smart_outdoor_camera" tabindex="0" role="smart_outdoor_camera" aria-labelledby="smart_outdoor_camera">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5>Smart Outdoor Wireless Camera</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="text-center prev-image-holder">
+                                <img src="img/products-full/smart-outdoor-wireless-camera-soho-cameras_768_608x608.png" class="img-responsive">
+                            </div>
+                            <h4>Product's Description</h4>
+                            <p>Keep an eye on things at home. With full live HD streaming, local constant recording and secure event recording to a cloud based storage solution these alarm verification cameras are perfectly suited to monitor your premises.</p>
+                            <ul class="intro-list">
+                                <li><b>Outdoor camera utilises pre-existing wifi for operation</b></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="contact_block">
+                                <div class="request-quote-form">
+                                    <h5>Request a FREE Quote</h5>
+                                    <div class="form-container">
+                                        <form action="#" method="POST" class="form-widget" novalidate="novalidate" id="contact_form_1">
+                                            <div class="field-wrp">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="product">Product <span>*</span></label>
+                                                    <input class="form-control" data-label="product" readonly type="text" name="product" id="product" aria-required="true" value="Smart Outdoor Wireless Camera">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="form-label" for="name1">Your Name <span>*</span></label>
+                                                    <input class="form-control" data-label="Name" required="" data-msg="Please enter your name." type="text" name="name" id="name1" placeholder="Enter your name" aria-required="true">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="form-label" for="email1">Your Email <span>*</span></label>
+                                                    <input class="form-control" data-label="Email" required="" data-msg="Please enter your email address." type="email" name="email" id="email1" placeholder="Enter your email" aria-required="true">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="form-label" for="phone1">Your Phone Number <span>*</span></label>
+                                                    <input class="form-control" data-label="Phone" required="" data-msg="Please enter your phone number." type="tel" name="phone" id="phone1" placeholder="Enter your phone number" aria-required="true">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="form-label" for="message1">Additional Details <span class="muted">(Optional)</span></label>
+                                                    <textarea class="form-control" data-label="Message" name="message" id="message1" placeholder="Enter Any Additional Details" cols="30" rows="10"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="text-center">
+                                                <button type="submit" class="btn btn-sm btn-submit">Get My Free Quote</button>
+                                            </div>
+                                        </form>
+                                        <p class="form-privacy">*Your details are kept confidential</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="popup-phone">
+                                <p>Or <b>Get In Touch Directly With Us On</b></p>
+                                <h2><a href="tel:0296025400"><i class="icon-phone-2" aria-hidden="true"></i>02 9602 5400</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <a href="#headerBar" id="back-to-top" class="to-top"> To Top <i class="fa fa-arrow-up"></i></a>
+    
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $("a.image").fancybox();
+
+            $('#contact_form_1').validate({
+                errorPlacement: function (error, element)
+                {
+                    element.after(error);
+                }
+            });
+            $('#contact_form').validate({
+                errorPlacement: function (error, element)
+                {
+                    element.after(error);
+                }
+            });
+//            function update() {
+//              $('span.clock-display').html(moment().format('h:mm:ss A'));
+//            }
+//
+//            setInterval(update, 1000);
+            
+            $('.mobile-nav-ul>li>a').on('click', function(){
+                $('.navbar-collapse').collapse('hide');
+            });
+            
+            function goToByScroll(id){
+                  // Remove "link" from the ID
+                id = id.replace("link", "");
+                  // Scroll
+                $('html,body').animate({
+                    scrollTop: $(id).offset().top},
+                    'slow');
+            }
+            
+            $('a').click(function(e) { 
+                var link = $(this).attr('href');
+
+                if (link.indexOf('#') > -1) {
+                    // Prevent a page reload when a link is pressed
+                    e.preventDefault(); 
+                      // Call the scroll function
+                    goToByScroll(link);   
+                }
+            });
+            
+            if ($('#back-to-top').length) {
+                var scrollTrigger = 100, // px
+                    backToTop = function () {
+                        var scrollTop = $(window).scrollTop();
+                        if (scrollTop > scrollTrigger) {
+                            $('#back-to-top').addClass('show');
+                        } else {
+                            $('#back-to-top').removeClass('show');
+                        }
+                    };
+                backToTop();
+                $(window).on('scroll', function () {
+                    backToTop();
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
